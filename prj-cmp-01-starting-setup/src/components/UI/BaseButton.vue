@@ -2,7 +2,7 @@
 <!-- this component creates a template for buttons -->
 <!-- the :class binding represents CSS classes that change the look of the button -->
 <!-- for example, you could create a button with class="flat" from the selectors in the style tab below -->
-    <button :type="type" :class="mode">
+    <button :class="mode">
         <!-- in this case, the slot could be used for dynamic labels or icons of the button -->
         <slot></slot>
     </button>
@@ -10,7 +10,7 @@
 
 <script>
 export default {
-    props: ['type', 'mode']
+    props: ['mode']
 }
 </script>
 
